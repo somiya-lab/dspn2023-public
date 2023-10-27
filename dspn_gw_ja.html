@@ -3,7 +3,7 @@
 <html>
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>dspn_gw_ja</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>dspn2023_gw</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -14251,6 +14251,11 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper" tabindex="0"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a download="" href="./dspn_gw_ja.ipynb">Download jupyter notebook</a></p>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper" tabindex="0"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>このノートブックでは、GW150914という初めて検出された重力波のデータを解析して物理量を推定します。</p>
 <p>必要なライブラリをインポートします。</p>
 </div>
@@ -14686,7 +14691,7 @@ $$</p>
 </div>
 <div class="jp-Cell-inputWrapper" tabindex="0"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>次に重力波の振幅が0となる時刻を求めます。時刻 $t_i\ (i=1,2,...)$ で重力波が観測されているとします（一般に観測データは離散であることに注意）。もし、時刻 $t_{i-1}$ での振幅 $h(t_{i-1})$ と時刻 $t_i$ での振幅 $h(t_{i})$ の積 $h(t_{i-1}) \cdot h(t_{i})$ が負であれば、その2点の間で重力波の振幅が0になっています。</p>
+<p>次に重力波の振幅がが0となる時刻を求めます。時刻 $t_i\ (i=1,2,...)$ で重力波が観測されているとします（一般に観測データは離散であることに注意）。もし、時刻 $t_{i-1}$ での振幅 $h(t_{i-1})$ と時刻 $t_i$ での振幅 $h(t_{i})$ の積 $h(t_{i-1}) \cdot h(t_{i})$ が負であれば、その2点の間で重力波の振幅が0になっています。</p>
 <p>ここでは、そのような2時刻を求め、その中心時刻で振幅が0になっていると近似します:</p>
 <p>$$
 \text{zero-crossing time}\ \tau_i \sim \frac{t_i + t_{i-1}}{2}
